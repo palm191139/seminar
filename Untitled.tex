@@ -13,6 +13,11 @@
  left=20mm,
  top=20mm,
  }
+ 
+ 
+%\usepackage[czech]{babel}
+%\addto\extrasczech{\def\bibname{tttttttttttt}\let\refname\bibname}
+
 
 \usepackage{graphicx}
 
@@ -33,7 +38,6 @@
 \date{}
 
 \begin{document}
-
 \maketitle
 \section*{บทคัดย่อ}
 \quad ในปัจจุบันเอยูซีเป็นเกณฑ์ที่ใช้ในการเปรียบเทียบประสิทธิภาพของตัวจำแนก มีการวิเคราะห์ทางสถิติหาความสัมพันธ์ระหว่างเอยูซีและอัตราผิดพลาด (Error rate) พบว่ากรณีที่คลาสไม่สมดุลที่มีอัตราผิดพลาดสูง ตัวจำแนกที่มีความถูกต้อง (Accuracy) สูงอาจจะไม่ได้มีค่าเอยูซีสูง เนื่องจากความถูกต้องจะแปรผันตามจำนวนตัวอย่างที่จำแนกผิดผิดพลาด ในขณะที่เอยูซีนอกจากจะแปรผันตามจำนวนตัวอย่างที่จำแนกผิดพลาดแล้วยังแปรผันตามลำดับ (Rank) ของตัวอย่างที่จำแนกผิดพลาดด้วย และมีการพิสูจน์เชิงทฤษฎีและทดลองพบว่าเอยูซีมีความสอดคล้อง (Consistency) และความสามารถในการจำแนก (Discriminancy) สูงกว่าความถูกต้องทั้งในกรณีที่คลาสสมดุลและไม่สมดุล นอกจากนี้ตัวจำแนกที่มีค่าเอยูซีสูงมีแนวโน้มที่จะมีค่าความถูกต้องสูงด้วย การออกแบบตัวจำแนกที่มีค่าเอยูซีสูงจึงมีความเหมาะสมมากกว่าตัวจำแนกที่มีความถูกต้องสูง ดังนั้นจึงมีความจำเป็นในการหาฟังก์ชันความสูญเสีย (Loss function) ที่เหมาะสมสำหรับการหาค่าเอยูซีที่เหมาะสมที่สุด
@@ -224,13 +228,21 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \quad ในบทความนี้ได้ให้คำจำกัดความอย่างเป็นทางการเกี่ยวกับความสอดคล้องและ ความสามารถในการจำแนก เพื่อใช้ประเมินผลสำหรับขั้นตอนวิธีการเรียนรู้ในปัญหาการจำแนก กำหนดรูปแบบและเกณฑ์ที่ใช้สำหรับการเปรียบเทียบตัวประเมินประสิทธิภาพทั้งสอง และแสดงให้เห็นอย่างชัดเจนว่า AUC นั้นเป็นตัวประเมินประสิทธิภาพที่ดีกว่าค่าความแม่นยำ และได้นำไปเปรียบเทียบกับเหตุการณ์จริงในธุรกิจเพื่อแสดงผลลัพธ์ที่น่าสนใจว่า AUC เกี่ยวข้องโดยตรงกับกำไรสุทธิมากกว่าค่าความแม่นยำในการตลาดทางตรง
 
 การเพิ่มประสิทธิภาพ AUC นั้นเป็นที่ต้องการมากกว่าการเพิ่มความแม่นยำในการนำขั้นตอนวิธีการเรียนรู้สำหรับปัญหาการจำแนกรวมถึงการทำเหมืองข้อมูลที่จะนำไปประยุกต์ใช้ในโลกความเป็นจริง
+\renewcommand\refname{ข้อมูลอ้างอิง}
 
-\section*{ข้อมูลอ้างอิง}
-\quad [1] Cortes, Corinna and Mohri, Mehryar. \textit{{AUC} {Optimization} vs. {Error} {Rate} {Minimization}}. Florham Park, NJ 07932, USA
+\begin{thebibliography}{9}
 
-[2] Ling, Charles X and Huang, Jin and Zhang, Harry. \textit{{AUC}: a {Statistically} {Consistent} and more {Discriminating} {Measure} than {Accuracy}}. Fredericton, NB, Canada
+\bibitem{latexcompanion} 
+Cortes, Corinna and Mohri, Mehryar. \textit{{AUC} {Optimization} vs. {Error} {Rate} {Minimization}}. Florham Park, NJ 07932, USA
 
-[3] {Jin Huang} and Ling, C.X. \textit{Using {AUC} and accuracy in evaluating learning algorithms}. London, Ontario, Canada
+\bibitem{latexcompanion} 
+Ling, Charles X and Huang, Jin and Zhang, Harry. \textit{{AUC}: a {Statistically} {Consistent} and more {Discriminating} {Measure} than {Accuracy}}. Fredericton, NB, Canada
+
+\bibitem{latexcompanion} 
+{Jin Huang} and Ling, C.X. \textit{Using {AUC} and accuracy in evaluating learning algorithms}. London, Ontario, Canada
+
+
+\end{thebibliography}
 
 \end{document}
 

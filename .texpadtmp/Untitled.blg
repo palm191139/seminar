@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is '/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.blg'
+[225] biber-darwin:322> INFO - === Tue Aug 25, 2020, 13:29:37
+[269] Biber.pm:415> INFO - Reading '/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.bcf'
+[531] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[543] Utils.pm:304> WARN - The file '/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.bcf' does not contain any citations!
+[566] bbl.pm:652> INFO - Writing '/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.bbl' with encoding 'UTF-8'
+[566] bbl.pm:755> INFO - Output to /Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.bbl
+[567] Biber.pm:128> INFO - WARNINGS: 1

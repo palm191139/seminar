@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  25 AUG 2020 13:57
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  25 AUG 2020 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,11 +384,11 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 101.
 
-File: Rplot01.pdf Graphic file (type pdf)
-<use Rplot01.pdf>
+File: pic/Rplot01.pdf Graphic file (type pdf)
+<use pic/Rplot01.pdf>
 [2]
-File: Rplot02.pdf Graphic file (type pdf)
-<use Rplot02.pdf>
+File: pic/Rplot02.pdf Graphic file (type pdf)
+<use pic/Rplot02.pdf>
 
 Underfull \hbox (badness 1072) in paragraph at lines 228--229
  \TU/THSarabunNew(0)/m/n/12 ใน บทความ นี้ ได้ ให้ คำ จำกัด ความ อย่าง เป็น ทางการ เกี่ยว กับ ความ
@@ -428,8 +428,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5970 strings out of 479418
- 147208 string characters out of 5884585
+ 5972 strings out of 479418
+ 147263 string characters out of 5884585
  474284 words of memory out of 5000000
  23412 multiletter control sequences out of 15000+600000
  537296 words of font info for 64 fonts, out of 8000000 for 9000

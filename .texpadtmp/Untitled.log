@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  25 AUG 2020 12:35
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  25 AUG 2020 12:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,11 +418,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5971 strings out of 479418
- 147283 string characters out of 5884585
+ 5969 strings out of 479418
+ 147192 string characters out of 5884585
  474284 words of memory out of 5000000
- 23412 multiletter control sequences out of 15000+600000
- 537304 words of font info for 65 fonts, out of 8000000 for 9000
+ 23411 multiletter control sequences out of 15000+600000
+ 537296 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  44i,12n,70p,893b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
 

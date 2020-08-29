@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  25 AUG 2020 14:14
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 03:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -371,7 +371,7 @@ LaTeX Font Warning: Font shape `TU/THSarabunNew(0)/m/sc' undefined
 (Font)              using `TU/THSarabunNew(0)/m/n' instead on input line 41.
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 55--55
+Underfull \hbox (badness 1087) in paragraph at lines 53--53
 []\TU/THSarabunNew(0)/b/n/17.28 เกณฑ์ สำหรับ การ เปรียบ เทียบ มาตรการ การ
  []
 
@@ -382,7 +382,7 @@ Underfull \hbox (badness 1087) in paragraph at lines 55--55
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 101.
+(amsmath)                 on input line 98.
 
 File: pic/Rplot01.pdf Graphic file (type pdf)
 <use pic/Rplot01.pdf>
@@ -390,7 +390,7 @@ File: pic/Rplot01.pdf Graphic file (type pdf)
 File: pic/Rplot02.pdf Graphic file (type pdf)
 <use pic/Rplot02.pdf>
 
-Underfull \hbox (badness 1072) in paragraph at lines 228--229
+Underfull \hbox (badness 1072) in paragraph at lines 224--225
  \TU/THSarabunNew(0)/m/n/12 ใน บทความ นี้ ได้ ให้ คำ จำกัด ความ อย่าง เป็น ทางการ เกี่ยว กับ ความ
  []
 
@@ -430,10 +430,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5972 strings out of 479418
  147263 string characters out of 5884585
- 474284 words of memory out of 5000000
+ 475284 words of memory out of 5000000
  23412 multiletter control sequences out of 15000+600000
  537296 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 44i,12n,70p,893b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,70p,878b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.pdf (4 pages).

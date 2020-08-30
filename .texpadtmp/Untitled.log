@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 16:38
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -377,27 +377,37 @@ Underfull \hbox (badness 1087) in paragraph at lines 55--55
 []\TU/THSarabunNew(0)/b/n/17.28 เกณฑ์ สำหรับ การ เปรียบ เทียบ มาตรการ การ
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
 [1
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+\TU/THSarabunNew(0)/b/n/12 นิยามที่ 2 \TU/THSarabunNew(0)/m/n/12 (ความสามารถในการจำแนก)\TU/THSarabunNew(0)/b/n/12 . \TU/THSarabunNew(0)/m/it/12 สำหรับ สอง การ ประเมิน
+ []
+
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 98.
+(amsmath)                 on input line 107.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-\TU/THSarabunNew(0)/b/n/12 นิยามที่ 3 \TU/THSarabunNew(0)/m/n/12 (ความสามารถในการจำแนก)\TU/THSarabunNew(0)/b/n/12 . \TU/THSarabunNew(0)/m/it/12 สำหรับ สอง การ ประเมิน
- []
+Underfull \vbox (badness 2134) has occurred while \output is active []
 
+ [2]
 File: pic/Rplot01.pdf Graphic file (type pdf)
 <use pic/Rplot01.pdf>
-[2]
+
+Underfull \vbox (badness 1297) has occurred while \output is active []
+
 File: pic/Rplot02.pdf Graphic file (type pdf)
 <use pic/Rplot02.pdf>
  [3]
-Underfull \hbox (badness 1072) in paragraph at lines 267--268
+Underfull \hbox (badness 1072) in paragraph at lines 249--250
  \TU/THSarabunNew(0)/m/n/12 ใน บทความ นี้ ได้ ให้ คำ จำกัด ความ อย่าง เป็น ทางการ เกี่ยว กับ ความ
  []
 
@@ -419,18 +429,16 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[4
-
-] (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
+[4] (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
 LaTeX Info: Redefining \rmfamily on input line 5.
 LaTeX Info: Redefining \sffamily on input line 5.
 LaTeX Info: Redefining \ttfamily on input line 5.
 ) ) 
 Here is how much of TeX's memory you used:
- 6056 strings out of 479418
- 148365 string characters out of 5884585
- 475527 words of memory out of 5000000
- 23490 multiletter control sequences out of 15000+600000
+ 6057 strings out of 479418
+ 148399 string characters out of 5884585
+ 476527 words of memory out of 5000000
+ 23491 multiletter control sequences out of 15000+600000
  537312 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  44i,12n,70p,921b,272s stack positions out of 5000i,500n,10000p,200000b,80000s

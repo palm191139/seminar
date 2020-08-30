@@ -17,6 +17,8 @@
  \usepackage{amsthm}
  \newtheorem{mydef}{นิยามที่}
  
+
+ 
 %\usepackage[czech]{babel}
 %\addto\extrasczech{\def\bibname{tttttttttttt}\let\refname\bibname}
 
@@ -28,13 +30,26 @@
 \XeTeXlinebreakskip = 0pt plus 1pt
 \setmainfont{THSarabunNew}
 
+
+\usepackage{lipsum}
+
+% ADD THE FOLLOWING COUPLE LINES INTO YOUR PREAMBLE
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+
+
 \newcommand{\specialcell}[2][c]{%
 \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 \title{\textbf{การคัดเลือกตัวแปรโดยการหาค่าเอยูซีเหมาะสมที่สุด}}
 \author{%
 \textbf{วรัญญู วงษ์เสรี, ปวริศ ธารีชาญ}\\[1ex]
- สาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ % \\\normalsize \href{mailto:john@smith.com}{john@smith.com}
+ภาควิชาวิศวกรรมไฟฟ้าและคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ % \\\normalsize \href{mailto:john@smith.com}{john@smith.com}
 }
 
 \date{}
@@ -266,7 +281,7 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \end{tabular}
 \end{center}
 
-และสุดท้ายเป็นการทดลองในหลายๆ อัตราส่วนของคลาสบวกและคลาสลบ โดยกำหนดให้มีข้อมูลทั้งหมด 10 ตัวอย่าง โดยเริ่มจากสมดุลคือมีทั้งหมดอย่างละ 5 ตัวอย่างจากนั้นเพิ่มและ ลดคลาสใดคลาสหนึ่งไปเรื่อยๆ จนไม่สามารถลดได้ ในกรณีนี้คือเหลือตัวเดียว
+และสุดท้ายเป็นการทดลองในหลายๆ อัตราส่วนของคลาสบวกและคลาสลบ โดยกำหนดให้มีข้อมูลทั้งหมด 10 ตัวอย่าง โดยเริ่มจากสมดุลคือมีทั้งหมดอย่างละ 5 ตัวอย่างจากนั้นเพิ่มและ ลดคลาสใดคลาสหนึ่งไปเรื่อยๆ จนไม่สามารถลดได้ ในกรณีนี้คือเหลือตัวเดียว ผลลัพธ์จากการทดลองแสดงดังตารางที่ 9
 
 จากการทดลองทั้งสองไม่ว่าเป็นข้อมูลทั้งแบบที่สมดุลและ ไม่สมดุลก็ตามผลการทดลองยังคงเป็นไปในทิศทางเดียวกัน ทั้งในมุมความสอดคล้องที่ยังคงสอดคล้องกันสูง และในมุมความสามารถในการจำแนกที่ AUC มีความสามารถในการจำแนกสูงขึ้นเรื่อยๆ ตามขนาดของข้อมูลและ ยิ่งมีความสามารถในการจำแนกสูงมากขึ้นเมื่อข้อมูลเกิดความไม่สมดุลของทั้งสองคลาส
 
@@ -282,33 +297,20 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 
 การสร้างแบบจำลองที่มีค่า AUC สูงจึงเป็นที่ต้องการมากกว่าการสร้างแบบจำลองที่มีความแม่นยำสูง
 \renewcommand\refname{ข้อมูลอ้างอิง}
+%\renewcommand{\thebibliography}[1]{%
+%  \oldbibliography{#1}%
+%  \setlength{\itemsep}{0pt}%
+%}
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
 
-\bibitem{1} 
-W. W. Cohen, R. E. Schapire, and Y. Singer. Learning to order things. Journal of Artificial Intelligence Research, 10:243–270, 1999.
-
-\bibitem{2} 
-F. Provost and T. Fawcett. Analysis and visualization of classifier performance: comparison under imprecise class and cost distribution. \textit{In Proceedings of the Third International Conference on Knowledge Discovery and Data Mining}, pages 43–48.AAAI Press, 1997.
-
-\bibitem{3} 
-{Jin Huang} and Ling, C.X. \textit{Using {AUC} and accuracy in evaluating learning algorithms}. London, Ontario, Canada
-
-\bibitem{4}
-A. P. Bradley. The use of the area under the ROC curve in the evaluation of machine learning algorithms. \textit{Pattern Recognition}, 30:1145–1159, 1997.
-
-\bibitem{5}
-J. A. Hanley and B. J. McNeil. The meaning and use of the area under a receiver operating characteristic (ROC) curve. \textit{Radiology}, 1982.
-
-\bibitem{6} 
-I. Kononenko. Comparison of inductive and naive Bayesian learning approaches to automatic knowledge acquisition. In B. Wielinga, editor, \textit{Current Trends in Knowledge Acquisition}. IOS Press, 1990.
-
-\bibitem{7} 
-D.J. Hand and R.J. Till. A simple generalisation of the area under the ROC curve for multipleclass classification problems. \textit{Machine Learning}, 45:171–186, 2001.
-
-
-
-
+\bibitem{1}W. W. Cohen, R. E. Schapire, and Y. Singer. Learning to order things. Journal of Artificial Intelligence Research, 10:243–270, 1999.
+\bibitem{2}F. Provost and T. Fawcett. Analysis and visualization of classifier performance: comparison under imprecise class and cost distribution. \textit{In Proceedings of the Third International Conference on Knowledge Discovery and Data Mining}, pages 43–48.AAAI Press, 1997.
+\bibitem{3}{Jin Huang} and Ling, C.X. \textit{Using {AUC} and accuracy in evaluating learning algorithms}. London, Ontario, Canada
+\bibitem{4}A. P. Bradley. The use of the area under the ROC curve in the evaluation of machine learning algorithms. \textit{Pattern Recognition}, 30:1145–1159, 1997.
+\bibitem{5}J. A. Hanley and B. J. McNeil. The meaning and use of the area under a receiver operating characteristic (ROC) curve. \textit{Radiology}, 1982.
+\bibitem{6} I. Kononenko. Comparison of inductive and naive Bayesian learning approaches to automatic knowledge acquisition. In B. Wielinga, editor, \textit{Current Trends in Knowledge Acquisition}. IOS Press, 1990.
+\bibitem{7} D.J. Hand and R.J. Till. A simple generalisation of the area under the ROC curve for multipleclass classification problems. \textit{Machine Learning}, 45:171–186, 2001.
 
 \end{thebibliography}
 

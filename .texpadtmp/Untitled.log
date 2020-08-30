@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 18:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 19:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,9 +252,9 @@ Package fontspec Info: Font family 'THSarabunNew(0)' created for font
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
  (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
-LaTeX Info: Redefining \rmfamily on input line 5.
-LaTeX Info: Redefining \sffamily on input line 5.
-LaTeX Info: Redefining \ttfamily on input line 5.
+LaTeX Info: Redefining \rmfamily on input line 7.
+LaTeX Info: Redefining \sffamily on input line 7.
+LaTeX Info: Redefining \ttfamily on input line 7.
 )
 \openout1 = `Untitled.aux'.
 
@@ -413,9 +413,12 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 [2]
 File: pic/Rplot01.pdf Graphic file (type pdf)
 <use pic/Rplot01.pdf>
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
 File: pic/Rplot02.pdf Graphic file (type pdf)
 <use pic/Rplot02.pdf>
-
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 253--256
 
  []
@@ -425,7 +428,7 @@ Underfull \hbox (badness 1946) in paragraph at lines 253--256
 \TU/THSarabunNew(0)/m/n/12 ตาราง ที่ 9 ความ สอดคล้อง และ ความ สามารถ ใน การ จำแนก ของ ค่า
  []
 
-[3]
+[4]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -444,18 +447,20 @@ braces):
 >  {latex/babelname}  =>  {latex}
 >  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [4] (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
-LaTeX Info: Redefining \rmfamily on input line 5.
-LaTeX Info: Redefining \sffamily on input line 5.
-LaTeX Info: Redefining \ttfamily on input line 5.
+ [5
+
+] (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
+LaTeX Info: Redefining \rmfamily on input line 7.
+LaTeX Info: Redefining \sffamily on input line 7.
+LaTeX Info: Redefining \ttfamily on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 6057 strings out of 479418
- 148399 string characters out of 5884585
- 478527 words of memory out of 5000000
- 23491 multiletter control sequences out of 15000+600000
+ 6059 strings out of 479418
+ 148405 string characters out of 5884585
+ 477527 words of memory out of 5000000
+ 23493 multiletter control sequences out of 15000+600000
  537312 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 44i,12n,70p,921b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,70p,951b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.pdf (4 pages).
+Output written on /Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.pdf (5 pages).

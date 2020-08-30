@@ -49,13 +49,13 @@
 
 ดังนั้นการจัดอันดับจึงเป็นที่ต้องการมากกว่าแค่การจัดประเภท และสามารถคำนวณได้ง่ายเนื่องจากแบบจำลองการจำแนกส่วนใหญ่จะสร้างการประมาณความน่าจะเป็นที่สามารถใช้ในการจัดอันดับได้
 
-เส้นโค้ง ROC (Receiver Operating Characteristics) นำมาประยุกต์ใช้ในการประเมินประสิทธิภาพการจัดอันดับของขั้นตอนวิธีการเรียนรู้สำหรับปัญหาการจำแนก \cite{6, 7} โดยพบว่า AUC มีคุณสมบัติที่พึงประสงค์หลายประการเมื่อเทียบกับความแม่นยำ \cite{4}
+เส้นโค้ง ROC (Receiver Operating Characteristics) นำมาประยุกต์ใช้ในการประเมินประสิทธิภาพ\cite{2, 3}การจัดอันดับของขั้นตอนวิธีการเรียนรู้สำหรับปัญหาการจำแนก \cite{4, 5} โดยพบว่า AUC มีคุณสมบัติที่พึงประสงค์หลายประการเมื่อเทียบกับความแม่นยำ \cite{6}
 ใน บทความ นี้ จะทดลองเปรียบเทียบเพื่อพิสูจน์ว่า AUC เป็นการประเมินประสิทธิภาพแบบจำลองที่ดีกว่าความแม่นยำ
 
 \section{เกณฑ์สำหรับการเปรียบเทียบมาตรการการประเมิน}
 \quad เริ่มต้นด้วยการเปรียบเทียบ AUC และความแม่นยำจากนั้นอธิบายคำจำกัดความที่เป็นทางการในการเปรียบเทียบตัวประเมินประสิทธิภาพแบบจำลองการจำแนกทั้งสองประเภท
 \subsection{ค่า AUC เทียบกับ ค่าความแม่นยำ}
-\quad การคำนวณ AUC สามารถคำนวณได้จาก\cite{5}
+\quad การคำนวณ AUC สามารถคำนวณได้จาก\cite{7}
 \begin{equation}
 AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \end{equation}
@@ -294,17 +294,19 @@ F. Provost and T. Fawcett. Analysis and visualization of classifier performance:
 \bibitem{3} 
 {Jin Huang} and Ling, C.X. \textit{Using {AUC} and accuracy in evaluating learning algorithms}. London, Ontario, Canada
 
-\bibitem{4} 
-I. Kononenko. Comparison of inductive and naive Bayesian learning approaches to automatic knowledge acquisition. In B. Wielinga, editor, \textit{Current Trends in Knowledge Acquisition}. IOS Press, 1990.
-
-\bibitem{5} 
-D.J. Hand and R.J. Till. A simple generalisation of the area under the ROC curve for multipleclass classification problems. \textit{Machine Learning}, 45:171–186, 2001.
-
-\bibitem{6}
+\bibitem{4}
 A. P. Bradley. The use of the area under the ROC curve in the evaluation of machine learning algorithms. \textit{Pattern Recognition}, 30:1145–1159, 1997.
 
-\bibitem{7}
+\bibitem{5}
 J. A. Hanley and B. J. McNeil. The meaning and use of the area under a receiver operating characteristic (ROC) curve. \textit{Radiology}, 1982.
+
+\bibitem{6} 
+I. Kononenko. Comparison of inductive and naive Bayesian learning approaches to automatic knowledge acquisition. In B. Wielinga, editor, \textit{Current Trends in Knowledge Acquisition}. IOS Press, 1990.
+
+\bibitem{7} 
+D.J. Hand and R.J. Till. A simple generalisation of the area under the ROC curve for multipleclass classification problems. \textit{Machine Learning}, 45:171–186, 2001.
+
+
 
 
 

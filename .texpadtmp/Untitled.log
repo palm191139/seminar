@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 03:29
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  30 AUG 2020 13:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -239,16 +239,9 @@ Package fontspec Info: Font family 'THSarabunNew(0)' created for font
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
  (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
-LaTeX Info: Redefining \rmfamily on input line 2.
-LaTeX Info: Redefining \sffamily on input line 2.
-LaTeX Info: Redefining \ttfamily on input line 2.
-
-
-LaTeX Warning: Label `latexcompanion' multiply defined.
-
-
-LaTeX Warning: Label `latexcompanion' multiply defined.
-
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
 )
 \openout1 = `Untitled.aux'.
 
@@ -386,7 +379,7 @@ File: pic/Rplot01.pdf Graphic file (type pdf)
 File: pic/Rplot02.pdf Graphic file (type pdf)
 <use pic/Rplot02.pdf>
 
-Underfull \hbox (badness 1072) in paragraph at lines 224--225
+Underfull \hbox (badness 1072) in paragraph at lines 226--227
  \TU/THSarabunNew(0)/m/n/12 ใน บทความ นี้ ได้ ให้ คำ จำกัด ความ อย่าง เป็น ทางการ เกี่ยว กับ ความ
  []
 
@@ -412,19 +405,15 @@ braces):
  [4
 
 ] (/Users/pawarit/Documents/GitHub/seminar/.texpadtmp/Untitled.aux
-LaTeX Info: Redefining \rmfamily on input line 2.
-LaTeX Info: Redefining \sffamily on input line 2.
-LaTeX Info: Redefining \ttfamily on input line 2.
-)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+LaTeX Info: Redefining \rmfamily on input line 3.
+LaTeX Info: Redefining \sffamily on input line 3.
+LaTeX Info: Redefining \ttfamily on input line 3.
+) ) 
 Here is how much of TeX's memory you used:
- 5969 strings out of 479418
- 147202 string characters out of 5884585
+ 5971 strings out of 479418
+ 147195 string characters out of 5884585
  474284 words of memory out of 5000000
- 23409 multiletter control sequences out of 15000+600000
+ 23411 multiletter control sequences out of 15000+600000
  537296 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  44i,12n,70p,878b,272s stack positions out of 5000i,500n,10000p,200000b,80000s

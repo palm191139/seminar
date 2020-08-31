@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  31 AUG 2020 15:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  31 AUG 2020 16:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -382,22 +382,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--62
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 73--73
+Underfull \hbox (badness 1087) in paragraph at lines 75--75
 []\TU/THSarabunNew(0)/b/n/17.28 เกณฑ์ สำหรับ การ เปรียบ เทียบ มาตรการ การ
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 103--106
+Underfull \hbox (badness 1168) in paragraph at lines 106--109
 \TU/THSarabunNew(0)/m/n/12 ตาราง ที่ 3 ตัวอย่าง ค้าน กรณี ที่ ตัว จำแนก แรก มี ค่า AUC สูง กว่า ตัว
  []
 
@@ -405,19 +405,19 @@ Underfull \hbox (badness 1168) in paragraph at lines 103--106
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 \TU/THSarabunNew(0)/b/n/12 นิยามที่ 2 \TU/THSarabunNew(0)/m/n/12 (ความสามารถในการจำแนก)\TU/THSarabunNew(0)/b/n/12 . \TU/THSarabunNew(0)/m/it/12 สำหรับ สอง การ ประเมิน
  []
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 149.
+(amsmath)                 on input line 152.
 
 [2]
 File: pic/Rplot01.pdf Graphic file (type pdf)
@@ -425,12 +425,12 @@ File: pic/Rplot01.pdf Graphic file (type pdf)
 File: pic/Rplot02.pdf Graphic file (type pdf)
 <use pic/Rplot02.pdf>
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 272--275
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 272--275
+Underfull \hbox (badness 1946) in paragraph at lines 277--280
 \TU/THSarabunNew(0)/m/n/12 ตาราง ที่ 9 ความ สอดคล้อง และ ความ สามารถ ใน การ จำแนก ของ ค่า
  []
 

@@ -76,7 +76,7 @@
 \quad เริ่มต้นด้วยการเปรียบเทียบ AUC และความแม่นยำจากนั้นอธิบายคำจำกัดความที่เป็นทางการในการเปรียบเทียบตัวประเมินประสิทธิภาพแบบจำลองการจำแนกทั้งสองประเภท
 \subsection{ค่า AUC เทียบกับ ค่าความแม่นยำ}
 \quad การคำนวณ AUC สามารถคำนวณได้จาก \cite{7}
-\begin{equation}
+\begin{equation}\label{eqn:1}
 AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \end{equation}
 \begin{center} ตารางที่ 1 ตัวอย่างข้อมูลการคำนวณ AUC \end{center}
@@ -91,7 +91,7 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \end{tabular}
 \end{center}
 
-เมื่อ $n_p$ และ $n_n$ คือจำนวนตัวอย่างทั้งหมดของคลาสบวก และคลาสลบตามลำดับ และ $r_i$ คือหมายเลขอันดับของคลาสบวกที่ i จากตัวอย่างในตารางที่ 1 พบว่ามีคลาสบวกและ คลาสลบอยู่อย่างละ 5 ตัว และเมื่อคำนวณหาค่า AUC จะได้ดังนี้ $\frac{(5+7+8+9+10)- 5\times\frac{6}{2}}{5\times5}$ ซึ่งเท่ากับ $\frac{24}{25}$ โดยค่าสูงสุดของ AUC จะมีค่าเท่ากับ 1 ในตัวอย่างถัดไปจะเห็นว่าเหตุใด AUC จึงเป็นหน่วยวัดที่ดีกว่าความแม่นยำ\\\\
+เมื่อ $n_p$ และ $n_n$ คือจำนวนตัวอย่างทั้งหมดของคลาสบวก และคลาสลบตามลำดับ และ $r_i$ คือหมายเลขอันดับของคลาสบวกที่ i จากตัวอย่างในตารางที่ 1 พบว่ามีคลาสบวกและ คลาสลบอยู่อย่างละ 5 ตัว และเมื่อคำนวณหาค่า AUC จาก (\ref{eqn:1}) จะได้ดังนี้ $\frac{(5+7+8+9+10)- 5\times\frac{6}{2}}{5\times5}$ ซึ่งเท่ากับ $\frac{24}{25}$ โดยค่าสูงสุดของ AUC จะมีค่าเท่ากับ 1 ในตัวอย่างถัดไปจะเห็นว่าเหตุใด AUC จึงเป็นหน่วยวัดที่ดีกว่าความแม่นยำ\\\\
 ตารางที่ 2 ตัวอย่างแบบจำลองการจำแนกทั้งสองที่มีค่าความแม่นยำเท่ากันแต่มี AUC ต่างกัน
 \begin{center}
 \begin{tabular}{|c|ccccc|ccccc|}
@@ -158,21 +158,15 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \begin{mydef}[ระดับของความสอดคล้อง]\label{def:ระดับของความสอดคล้อง}
 สำหรับสองการประเมินประสิทธิภาพ $f, g$ ในโดเมน $\Psi$ ให้ $R\:=\:\{(a,b)|a,b\:\in\:\Psi,\:f(a)\:>\:f(b),\:g(a)\:>\:g(b)\},\:S\:=\:\{(a,b)|a,b\:\in\:\Psi,\:f(a)\:>\:f(b),\: g(a)\:<\:g(b)\}$ ระดับของความสอดคล้อง $C$ ของ $f$ และ $g$ โดยที่ $C(0 \leq C \leq 1)$ เมื่อ $C = \frac{|R|}{|R|+|S|}$
 \end{mydef}
+
 จากนิยามที่ \ref{def:ระดับของความสอดคล้อง} หมายถึงระดับของความสอดคล้อง $C$ คิดได้จากเหตุการณ์ที่ค่า AUC และค่าความแม่นยำ เป็นไปในทิศทางเดียวกัน หารด้วย ผลรวมของทั้งสองเหตุการณ์ ผลลัพธ์จากการทดลองแสดงดังตารางที่ 5
+
 
 จากนิยามที่ \ref{def:ความสามารถในการจำแนก} หมายถึงถ้ากำหนดให้ $a, b$ เป็นรูปแบบชุดข้อมูลที่แตกต่างกันแล้วถ้า $acc(a)  = acc(b)$ แต่ $AUC(a) > AUC(b)$ ด้วย จะนับว่าค่า AUC นั้นมีความสามารถในการจำแนกสูงกว่าค่าความแม่นยำ แต่เมื่อ  $AUC(a) = AUC(b)$ และ $acc(a) > acc(b)$ จะถูกนับว่าค่าความแม่นยำ นั้นมีความสามารถในการจำแนกสูงกว่าค่า AUC  นำไปสู่การคำนวณค่าระดับของความสามารถในการจำแนก
 
 \begin{mydef}[ระดับของความสามารถในการจำแนก]\label{def:ระดับของความสามารถในการจำแนก}
 สำหรับสองการประเมินประสิทธิภาพ $f,\:g$ ในโดเมน $\Psi$ ให้ $P\:=\:\{(a,b)|a,b\:\in\:\Psi,\:f(a)\:>\:f(b),\:g(a)\:=\:g(b)\},\:Q\:=\:\{(a,b)|a,b\:\in\:\Psi,\:g(a)\:>\:g(b),\: f(a)\:=\:f(b)\}$ ระดับของความสามารถในการจำแนก $D$ ของ $f$ ที่มีความสามารถในการจำแนกสูงกว่า $g$ จะได้ $D = \frac{|P|}{|Q|}$
 \end{mydef}
-
-จากนิยามที่ \ref{def:ระดับของความสามารถในการจำแนก} หมายถึงระดับของความสามารถในการจำแนก $D$ คิดได้จากเหตุการณ์ที่ AUC มีความสามารถในการจำแนกสูงกว่าค่าความแม่นยำ หารด้วย เหตุการณ์ที่ค่าความแม่นยำ มีความสามารถในการจำแนกสูงกว่า AUC ผลลัพธ์จากการทดลองแสดงดังตารางที่ 6
-
-\begin{mydef}
-ตัวประเมินประสิทธิภาพ $f$ เป็นตัวประเมินประสิทธิภาพที่ดีกว่า $g$ ก็ต่อเมื่อตัวประเมินประสิทธิภาพ $f$ มีความสอดคล้องกับตัวประเมินประสิทธิภาพ $g$ ก็ต่อเมื่อ $C\:>\:0.5$ และ ตัวประเมินประสิทธิภาพ $f$ มีความสามารถในการจำแนกดีกว่า $g$ ก็ต่อเมื่อ $D\:>\:1$
-\end{mydef}
-
-สังเกตในตารางที่ 5 และ 6 พบว่าในกรณีที่ข้อมูลมีความสมดุลกัน ความสามารถในการจำแนกของค่า AUC สูงขึ้นเรื่อยๆ เมื่อจำนวนตัวอย่างมากขึ้นเรื่อยๆ และความสอดคล้องของตัวประเมินประสิทธิภาพทั้งสองสูงมาก หมายความว่ากรณีชุดตัวอย่างที่สมดุลกันค่า AUC เป็นตัวประเมินประสิทธิภาพที่ดีกว่าค่าความแม่นยำ
 
 \begin{center} ตารางที่ 5 ความสอดคล้องกันของ AUC และ ความแม่นยำ \end{center}\begin{center}
 \begin{tabular}{cccc}
@@ -199,6 +193,14 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
   \hline  
 \end{tabular}
 \end{center}
+
+จากนิยามที่ \ref{def:ระดับของความสามารถในการจำแนก} หมายถึงระดับของความสามารถในการจำแนก $D$ คิดได้จากเหตุการณ์ที่ AUC มีความสามารถในการจำแนกสูงกว่าค่าความแม่นยำ หารด้วย เหตุการณ์ที่ค่าความแม่นยำ มีความสามารถในการจำแนกสูงกว่า AUC ผลลัพธ์จากการทดลองแสดงดังตารางที่ 6
+
+\begin{mydef}
+ตัวประเมินประสิทธิภาพ $f$ เป็นตัวประเมินประสิทธิภาพที่ดีกว่า $g$ ก็ต่อเมื่อตัวประเมินประสิทธิภาพ $f$ มีความสอดคล้องกับตัวประเมินประสิทธิภาพ $g$ ก็ต่อเมื่อ $C\:>\:0.5$ และ ตัวประเมินประสิทธิภาพ $f$ มีความสามารถในการจำแนกดีกว่า $g$ ก็ต่อเมื่อ $D\:>\:1$
+\end{mydef}
+
+สังเกตในตารางที่ 5 และ 6 พบว่าในกรณีที่ข้อมูลมีความสมดุลกัน ความสามารถในการจำแนกของค่า AUC สูงขึ้นเรื่อยๆ เมื่อจำนวนตัวอย่างมากขึ้นเรื่อยๆ และความสอดคล้องของตัวประเมินประสิทธิภาพทั้งสองสูงมาก หมายความว่ากรณีชุดตัวอย่างที่สมดุลกันค่า AUC เป็นตัวประเมินประสิทธิภาพที่ดีกว่าค่าความแม่นยำ
 
 \begin{center} ตารางที่ 6 ความสามารถในการจำแนกของค่า AUC และ ความแม่นยำ \end{center}
 \begin{center}
@@ -267,12 +269,11 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 \end{tabular}
 \end{center}
 
+สังเกตในตารางที่ 7 และ 8 พบว่าในกรณีที่ข้อมูลมีความไม่สมดุลกัน ความสามารถในการจำแนกของค่า AUC สูงขึ้นเรื่อยๆ เมื่อจำนวนตัวอย่างมากขึ้นเรื่อยๆ และความสอดคล้องของตัวประเมินประสิทธิภาพทั้งสองสูงมาก หมายความว่ากรณีชุดตัวอย่างที่ไม่สมดุลกันแสดงในรูปที่ 2 
 
 \begin{center} \includegraphics[height=2in,width=2.5in]{pic/Rplot02.pdf}
 \linebreak 
 รูปที่ 2 ค่าความสอดคล้องและ ค่าความสามารถในการจำแนก เทียบจำนวนตัวอย่าง กรณีข้อมูลไม่สมดุล\end{center}
-
-สังเกตในตารางที่ 7 และ 8 พบว่าในกรณีที่ข้อมูลมีความไม่สมดุลกัน ความสามารถในการจำแนกของค่า AUC สูงขึ้นเรื่อยๆ เมื่อจำนวนตัวอย่างมากขึ้นเรื่อยๆ และความสอดคล้องของตัวประเมินประสิทธิภาพทั้งสองสูงมาก หมายความว่ากรณีชุดตัวอย่างที่ไม่สมดุลกันแสดงในรูปที่ 2 
 
 ค่า AUC เป็นตัวประเมินประสิทธิภาพที่ดีกว่าค่าความแม่นยำและหากสังเกตที่ความสามารถในการจำแนกกรณีที่ข้อมูลตัวอย่างสมดุลเทียบกรณีที่ข้อมูลตัวอย่างไม่สมดุลจะเห็นได้ว่า เมื่อข้อมูลตัวอย่างเกิดความไม่สมดุลขึ้นในจำนวนตัวอย่างที่เท่ากัน (เช่น จำนวนตัวอย่างเท่ากับ 12 ระดับความสามารถในการจำแนกของชุดข้อมูลตัวอย่างที่สมดุลเท่ากับ 16.3 แต่ความสามารถในการจำแนกของชุดข้อมูลตัวอย่างที่ไม่สมดุลเท่ากับ 18.4) จะเห็นได้ว่าชุดข้อมูลตัวอย่างที่ไม่สมดุลนั้นค่า AUC มีความสามารถในการจำแนกสูงกว่าค่าความแม่นยำ
 \\\\
@@ -313,13 +314,13 @@ AUC = \frac{\sum r_i-n_p\frac{n_p + 1}{2}}{n_pn_n}
 
 \begin{thebibliography}{99}
 
-\bibitem{1}W. W. Cohen, R. E. Schapire, and Y. Singer. Learning to order things. \textit{Journal of Artificial Intelligence Research}, 10:243–270, 1999.
-\bibitem{2}F. Provost and T. Fawcett. Analysis and visualization of classifier performance: comparison under imprecise class and cost distribution. \textit{In Proceedings of the Third International Conference on Knowledge Discovery and Data Mining}, pages 43–48.AAAI Press, 1997.
-\bibitem{3}J. Huang and Ling, C.X. Using {AUC} and accuracy in evaluating learning algorithms. \textit{Classification algorithms}, pages299 - 310, 2005
-\bibitem{4}A. P. Bradley. The use of the area under the ROC curve in the evaluation of machine learning algorithms. \textit{Pattern Recognition}, 30:1145–1159, 1997.
-\bibitem{5}J. A. Hanley and B. J. McNeil. The meaning and use of the area under a receiver operating characteristic (ROC) curve. \textit{Radiology}, 1982.
-\bibitem{6} I. Kononenko. Comparison of inductive and naive Bayesian learning approaches to automatic knowledge acquisition. In B. Wielinga, editor, \textit{Current Trends in Knowledge Acquisition}. IOS Press, 1990.
-\bibitem{7} D.J. Hand and R.J. Till. A simple generalisation of the area under the ROC curve for multipleclass classification problems. \textit{Machine Learning}, 45:171–186, 2001.
+\bibitem{1}W. W. Cohen, R. E. Schapire, and Y. Singer. "Learning to order things". \textit{Journal of Artificial Intelligence Research}, 10:243–270, 1999.
+\bibitem{2}F. Provost and T. Fawcett. "Analysis and visualization of classifier performance: comparison under imprecise class and cost distribution". \textit{In Proceedings of the Third International Conference on Knowledge Discovery and Data Mining}, pages 43–48.AAAI Press, 1997.
+\bibitem{3}J. Huang and Ling, C.X. "Using {AUC} and accuracy in evaluating learning algorithms". \textit{Classification algorithms}, pages299 - 310, 2005
+\bibitem{4}A. P. Bradley. "The use of the area under the ROC curve in the evaluation of machine learning algorithms". \textit{Pattern Recognition}, 30:1145–1159, 1997.
+\bibitem{5}J. A. Hanley and B. J. McNeil. "The meaning and use of the area under a receiver operating characteristic (ROC) curve". \textit{Radiology}, 1982.
+\bibitem{6} I. Kononenko. "Comparison of inductive and naive Bayesian learning approaches to automatic knowledge acquisition". In B. Wielinga, editor, \textit{Current Trends in Knowledge Acquisition}. IOS Press, 1990.
+\bibitem{7} D.J. Hand and R.J. Till. "A simple generalisation of the area under the ROC curve for multipleclass classification problems". \textit{Machine Learning}, 45:171–186, 2001.
 
 \end{thebibliography}
 

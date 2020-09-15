@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  31 AUG 2020 16:30
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.16)  15 SEP 2020 23:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,15 +422,16 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 [2]
 File: pic/Rplot01.pdf Graphic file (type pdf)
 <use pic/Rplot01.pdf>
+ [3]
 File: pic/Rplot02.pdf Graphic file (type pdf)
 <use pic/Rplot02.pdf>
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 277--280
+Underfull \hbox (badness 1946) in paragraph at lines 278--281
 \TU/THSarabunNew(0)/m/n/12 ตาราง ที่ 9 ความ สอดคล้อง และ ความ สามารถ ใน การ จำแนก ของ ค่า
  []
 
@@ -461,10 +462,10 @@ LaTeX Info: Redefining \sffamily on input line 9.
 LaTeX Info: Redefining \ttfamily on input line 9.
 ) ) 
 Here is how much of TeX's memory you used:
- 6218 strings out of 479418
- 152761 string characters out of 5884585
+ 6219 strings out of 479418
+ 152768 string characters out of 5884585
  656917 words of memory out of 5000000
- 23644 multiletter control sequences out of 15000+600000
+ 23645 multiletter control sequences out of 15000+600000
  537312 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  44i,12n,70p,952b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
